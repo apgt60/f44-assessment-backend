@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get a fortune</button>
+    <br>
+    <form id="notes-add-form">
+      <input 
+          type='text'
+          id="notes-add-input"
+          placeholder="Add a new note"/>
+      <button>Add Note</button>
+    </form>
+
+    <ul id="notesList">
+
+    </ul>
+    <form id="notes-edit-form">
+      <input 
+          type='text'
+          id="notes-edit-id-input"
+          placeholder="ID"
+          maxlength="2"
+          size="2"/>
+      <input 
+          type='text'
+          id="notes-edit-text-input"
+          placeholder="New text"/>
+      <button>Update Note</button>
+    </form>
+    <form id="notes-delete-form">
+      <input 
+          type='text'
+          id="notes-delete-id-input"
+          placeholder="ID"
+          maxlength="2"
+          size="2"/>
+      <button>Delete Note</button>
+    </form>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
